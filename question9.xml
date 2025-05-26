@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="question9a.xsl"?>
+<content>
+    <header>Hello Everyone! Welcome to XML to CSS</header>
+    <section name="Algo">
+        <item>Greedy Algo</item>
+        <item>Randomized Algo</item>
+        <item>Searching Algo</item>
+        <item>Sorting Algo</item>
+    </section>
+    <section name="Data Structures">
+        <item>Array</item>
+        <item>Stack</item>
+        <item>Queue</item>
+        <item>Linked List</item>
+    </section>
+    <section name="Web Technology">
+        <item>HTML</item>
+        <item>CSS</item>
+        <item>Java Script</item>
+        <item>Php</item>
+    </section>
+    <section name="Languages">
+        <item>C/C++</item>
+        <item>Java</item>
+        <item>Python</item>
+        <item>Ruby</item>
+    </section>
+    <section name="DBMS">
+        <item>Basics</item>
+        <item>ER Diagram</item>
+        <item>Normalization</item>
+        <item>Transaction Concepts</item>
+    </section>
+</content>

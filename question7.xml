@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<movies xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="question7a.xsd">
+
+  <Movie id="m001">
+    <title>Loot</title>
+    <year>2012</year>
+    <_director name="Nischal Basnet">Nischal Basnet</_director>
+    <comment lang="en">A groundbreaking Nepali crime thriller.</comment>
+    <newcomment>Popular among youth.</newcomment>
+  </Movie>
+
+  <Movie id="m002">
+    <title>Chhakka Panja</title>
+    <year>2016</year>
+    <_director name="Deepa Shree Niraula">Deepa Shree Niraula</_director>
+    <newcomment>Comedy that tackles social issues.</newcomment>
+    <comment lang="en">Nepal’s highest-grossing film</comment>
+  </Movie>
+
+  <Movie id="m003">
+    <title>Kagbeni</title>
+    <year>2008</year>
+    <_director name="Bhusan Dahal">Bhusan Dahal</_director>
+    <comment>A classic Nepali thriller based on a Western tale.</comment>
+    <newcomment>Beautifully shot in Mustang region.</newcomment>
+  </Movie>
+
+</movies>

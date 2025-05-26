@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<students xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:noNamespaceSchemaLocation="question5a.xsd">
+
+    <student rollno="40">
+        <name>
+            <first>Prasun</first>
+            <middle>Prasad</middle>
+            <last>Lamichhane</last>
+        </name>
+        <email>hello@gmail.com</email>
+        <phone>9801234567</phone>
+        <address type="permanent">Kathmandu</address>
+        <address type="temporary">Lalitpur</address>
+        <dob type="AD">2006-03-16</dob>
+    </student>
+
+    <student rollno="41">
+        <name>
+            <first>Ram</first>
+            <last>Shrestha</last>
+        </name>
+        <email>ramshrestha1@gmail.com</email>
+        <phone>9812345678</phone>
+        <address type="permanent">Pokhara</address>
+        <dob type="BS">2062-12-03</dob>
+    </student>
+
+</students>

@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Hospital xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:noNamespaceSchemaLocation="question13a.xsd">
+
+  <Patient>
+    <PatientNumber>12345</PatientNumber>
+    <Name>
+      <FirstName>Prasun</FirstName>
+      <LastName>Lamichhane</LastName>
+    </Name>
+    <DoctorName>Dr. Pushpa Kamal Dahal</DoctorName>
+    <Diseases>
+      <Disease>Diabetes</Disease>
+      <Disease>Blood Pressure</Disease>
+    </Diseases>
+    <ConsultationCharge>1200</ConsultationCharge>
+    <LabTests>
+      <Test>Blood Test</Test>
+      <Test>ECG</Test>
+    </LabTests>
+  </Patient>
+
+  <Patient>
+    <PatientNumber>67890</PatientNumber>
+    <Name>
+      <FirstName>Ridesh</FirstName>
+      <MiddleName>Rana</MiddleName>
+      <LastName>Magar</LastName>
+    </Name>
+    <DoctorName>Dr. Narendra Bahadur</DoctorName>
+    <Diseases>
+      <Disease>Asthma</Disease>
+    </Diseases>
+    <ConsultationCharge>900</ConsultationCharge>
+    <LabTests>
+      <Test>X-Ray</Test>
+    </LabTests>
+  </Patient>
+
+</Hospital>

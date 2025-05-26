@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:element name="Hospital">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Patient" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="PatientNumber" type="PatientNumberType"/>
+              <xs:element name="Name">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="FirstName" type="xs:string"/>
+                    <xs:element name="MiddleName" type="xs:string" minOccurs="0"/>
+                    <xs:element name="LastName" type="xs:string"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="DoctorName" type="xs:string"/>
+              <xs:element name="Diseases">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="Disease" type="xs:string" maxOccurs="unbounded"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="ConsultationCharge" type="ConsultationChargeType"/>
+              <xs:element name="LabTests">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="Test" type="xs:string" maxOccurs="unbounded"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:simpleType name="PatientNumberType">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="\d{5}"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="ConsultationChargeType">
+    <xs:restriction base="xs:decimal">
+      <xs:minInclusive value="500"/>
+      <xs:maxInclusive value="5000"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+</xs:schema>

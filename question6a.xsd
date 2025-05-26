@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:element name="school">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="name" type="xs:string"/>
+        <xs:element name="location" type="xs:string"/>
+        <xs:element name="staffCollection">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="staff" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="name" type="xs:string"/>
+                    <xs:element name="title" type="xs:string" minOccurs="0"/>
+                    <xs:element name="addresses">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="address" type="addressType" maxOccurs="unbounded"/>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                  <xs:attribute name="staffId" type="xs:ID" use="required"/>
+                  <xs:attribute name="category" use="required">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:enumeration value="academic"/>
+                        <xs:enumeration value="general"/>
+                        <xs:enumeration value="technical"/>
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:attribute>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+
+        <xs:element name="subjectCollection">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="subject" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="name" type="xs:string"/>
+                    <xs:element name="description" type="xs:string"/>
+                    <xs:element name="capacity">
+                      <xs:simpleType>
+                        <xs:restriction base="xs:positiveInteger">
+                          <xs:minInclusive value="6"/>
+                          <xs:maxInclusive value="400"/>
+                        </xs:restriction>
+                      </xs:simpleType>
+                    </xs:element>
+                    <xs:element name="taughtBy" type="xs:IDREF" maxOccurs="unbounded"/>
+                  </xs:sequence>
+                  <xs:attribute name="subjectCode" type="xs:ID" use="required"/>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+      <xs:attribute name="schoolId" type="xs:ID" use="required"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:complexType name="addressType">
+    <xs:sequence>
+      <xs:element name="street" type="xs:string"/>
+      <xs:element name="suburb" type="xs:string"/>
+      <xs:element name="postcode" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+
+</xs:schema>

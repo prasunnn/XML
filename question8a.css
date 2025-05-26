@@ -1,0 +1,42 @@
+oceans {
+    display: block;
+    font-family: Arial, sans-serif;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    line-height: 1.6;
+}
+
+title {
+    display: block;
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 1em;
+    padding-bottom: 0.3em;
+    border-bottom: 2px solid #000;
+}
+
+ocean {
+    display: block;
+    margin-bottom: 1.5em;
+}
+
+name {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 0.3em;
+}
+
+area::before {
+    content: "Area: ";
+}
+
+depth::before {
+    content: "Mean depth: ";
+}
+
+area, depth {
+    display: block;
+    margin-left: 0;
+    font-weight: normal;
+}

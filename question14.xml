@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="question14a.xsl"?>
+<!DOCTYPE catalog [
+  <!ELEMENT catalog (book+)>
+  <!ELEMENT book (author, title, genre, price, publish_date, description)>
+  <!ATTLIST book id ID #REQUIRED>
+  <!ELEMENT author (#PCDATA)>
+  <!ELEMENT title (#PCDATA)>
+  <!ELEMENT genre (#PCDATA)>
+  <!ELEMENT price (#PCDATA)>
+  <!ELEMENT publish_date (#PCDATA)>
+  <!ELEMENT description (#PCDATA)>
+]> 
+<catalog>
+  <book id="bk101">
+    <author>Gambardella, Matthew</author>
+    <title>XML Developer's Guide</title>
+    <genre>Computer</genre>
+    <price>44.95</price>
+    <publish_date>2000-10-01</publish_date>
+    <description>In-depth look at creating applications with XML.</description>
+  </book>
+  <book id="bk102">
+    <author>Ralls, Kim</author>
+    <title>Midnight Rain</title>
+    <genre>Fantasy</genre>
+    <price>5.95</price>
+    <publish_date>2000-12-16</publish_date>
+    <description>A former architect battles corporate zombies.</description>
+  </book>
+  <book id="bk103">
+    <author>Corets, Eva</author>
+    <title>Maeve Ascendant</title>
+    <genre>Fantasy</genre>
+    <price>5.95</price>
+    <publish_date>2000-11-17</publish_date>
+    <description>After the collapse of a nanotechnology society...</description>
+  </book>
+  <book id="bk104">
+    <author>Randall, Cynthia</author>
+    <title>Lover Birds</title>
+    <genre>Romance</genre>
+    <price>4.95</price>
+    <publish_date>2000-09-02</publish_date>
+    <description>When Carla meets Paul at an ornithology conference...</description>
+  </book>
+  <book id="bk105">
+    <author>Thurman, Paula</author>
+    <title>Splish Splash</title>
+    <genre>Romance</genre>
+    <price>4.95</price>
+    <publish_date>2000-11-02</publish_date>
+    <description>A deep-sea diver finds true love 20,000 leagues under the sea.</description>
+  </book>
+</catalog>

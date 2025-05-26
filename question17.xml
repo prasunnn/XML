@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<sales xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:noNamespaceSchemaLocation="question17a.xsd">
+  <salesman>
+    <name title="Mr.">
+      <first>John</first>
+      <middle>W.</middle>
+      <last>Doe</last>
+    </name>
+    <phone type="work">123-456-7890</phone>
+    <area>Kathmandu</area>
+    <records>
+      <record>
+        <product productid="P101">
+          <sku>SKU123</sku>
+          <product_name>Laptop</product_name>
+        </product>
+        <quantity>2</quantity>
+        <price currency="usd">1200</price>
+        <date type="ad">2025-05-20</date>
+      </record>
+      <record>
+        <product productid="P102">
+          <sku>SKU456</sku>
+          <product_name>Mouse</product_name>
+        </product>
+        <quantity>5</quantity>
+        <price>500</price>
+        <date type="bs">2082-02-05</date>
+      </record>
+    </records>
+  </salesman>
+</sales>

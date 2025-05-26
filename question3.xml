@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<songs>
+    <song>
+        <name>Level Tipping Scales</name>
+        <singer>Boldy James</singer>
+        <composer>Prasun</composer>
+        <length>3:00</length>
+    </song>
+    <song>
+        <name>5 to 50</name>
+        <singer>Benny The Butcher</singer>
+        <composer>Prasun</composer>
+        <length>4:00</length>
+    </song>
+    <song>
+        <name>Untitled 06</name>
+        <singer>Kendrick Lamar</singer>
+        <composer>Prasun</composer>
+        <length>3:00</length>
+    </song>
+    <song>
+        <name>My Sweet Lord</name>
+        <singer>George Harrison</singer>
+        <composer>Prasun</composer>
+        <length>3:00</length>
+    </song>
+</songs>

@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<products xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="question16a.xsl">>
+    <product>
+        <productname>Product A</productname>
+        <category>Electronics</category>
+        <price>100</price>
+        <quantity>15</quantity>
+    </product>
+    ...
+</products>

@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<school xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="question6a.xsd"
+        schoolId="SCH001">
+    <name>Patan School</name>
+    <location>Patan Dhoka</location>
+
+    <staffCollection>
+        <staff staffId="STF001" category="academic">
+            <name>Prasun Lamichhane</name>
+            <title>Professor</title>
+            <addresses>
+                <address>
+                    <street>123 patandhoka</street>
+                    <suburb>Lalitpur</suburb>
+                    <postcode>12345</postcode>
+                </address>
+            </addresses>
+        </staff>
+        <staff staffId="STF002" category="technical">
+            <name>Sita Kumari</name>
+            <title></title>
+            <addresses>
+                <address>
+                    <street>456 Lagankhel stop</street>
+                    <suburb>Pulchowk</suburb>
+                    <postcode>67890</postcode>
+                </address>
+                <address>
+                    <street>789 Chandini marg</street>
+                    <suburb>Chowk</suburb>
+                    <postcode>54321</postcode>
+                </address>
+            </addresses>
+        </staff>
+    </staffCollection>
+
+    <subjectCollection>
+        <subject subjectCode="SUB001">
+            <name>Web Technology</name>
+            <description>Learn about Web Technology and client server commuinication.</description>
+            <capacity>60</capacity>
+            <taughtBy>STF001</taughtBy>
+        </subject>
+        <subject subjectCode="SUB002">
+            <name>OOP in JAVA</name>
+            <description>Basic Java Programming</description>
+            <capacity>120</capacity>
+            <taughtBy>STF002</taughtBy>
+        </subject>
+    </subjectCollection>
+</school>
